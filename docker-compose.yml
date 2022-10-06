@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  api-planetas:
+    container_name: api-posicaoplaneta
+    image: api-posicaoplaneta
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./service:/code/service
+    networks:
+      - backend
+    ports:
+      - 9000:9000
+
+networks:
+  backend:
+    driver: bridge
