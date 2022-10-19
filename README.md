@@ -1,4 +1,4 @@
-# api-encontraraiz
+# api-posicaoplaneta
 
 Projeto que sobe um Container e, neste, uma API RESTful com o Swagger
 
